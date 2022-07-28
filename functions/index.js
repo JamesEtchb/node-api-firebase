@@ -22,6 +22,12 @@ app.post('/addnew', (req, res) => {
     res.send('new feature')    
 })
 
+app.get('/confusedkinda', (req, res) => {
+  res.send('Too many branches')
+})
+
+
+
 exports.api = functions.https.onRequest(app)
 
 

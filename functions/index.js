@@ -26,6 +26,12 @@ app.get('/confusedkinda', (req, res) => {
   res.send('Too many branches')
 })
 
+app.get('/notconfused', (req, res) => {
+  res.send('this is crazy')
+})
+
+//trying to make some changes
+
 
 
 exports.api = functions.https.onRequest(app)
